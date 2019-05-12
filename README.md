@@ -52,3 +52,8 @@ Local.xml
             Application.Run(new Form1());
         }
 ```
+## 更新日志
+### 1.1.1.2 (2019-05-12)
+1. 修复无效URI BUG
+2. 升级.NET版本
+3. 日志新增时间参数

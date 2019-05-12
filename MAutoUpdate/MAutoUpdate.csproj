@@ -10,7 +10,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>MAutoUpdate</RootNamespace>
     <AssemblyName>MAutoUpdate</AssemblyName>
-    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
@@ -43,6 +43,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <UseVSHostingProcess>true</UseVSHostingProcess>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -51,6 +52,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup />
   <PropertyGroup>
@@ -69,18 +71,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MainForm1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MainForm1.Designer.cs">
-      <DependentUpon>MainForm1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="MRichTextBox.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="MRichTextBox.Designer.cs">
-      <DependentUpon>MRichTextBox.cs</DependentUpon>
-    </Compile>
     <Compile Include="UpdateWork.cs" />
     <Compile Include="LocalInfo.cs" />
     <Compile Include="LogTool.cs" />
@@ -152,9 +142,6 @@
     <Compile Include="Zip DLL\ZlibCodec.cs" />
     <Compile Include="Zip DLL\ZlibConstants.cs" />
     <Compile Include="Zip DLL\ZlibStream.cs" />
-    <EmbeddedResource Include="MainForm1.resx">
-      <DependentUpon>MainForm1.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -168,6 +155,7 @@
     </EmbeddedResource>
     <None Include="app.config" />
     <None Include="app.manifest" />
+    <None Include="bin\Debug\MAutoUpdate.exe.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -180,6 +168,9 @@
     <None Include="Zip DLL\Migrated rules for Zip DLL.ruleset" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="bin\Debug\Local.xml" />
+    <Content Include="bin\Debug\MAutoUpdate.exe" />
+    <Content Include="bin\Debug\MAutoUpdate.pdb" />
     <Content Include="Zip DLL\msbuild.flymake.xml" />
     <None Include="config.update" />
     <Content Include="Local.xml">

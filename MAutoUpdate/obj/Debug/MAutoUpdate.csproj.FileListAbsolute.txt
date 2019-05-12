@@ -1,0 +1,12 @@
+E:\GitHub\20190512\MAutoUpdate\MAutoUpdate\bin\Debug\Local.xml
+E:\GitHub\20190512\MAutoUpdate\MAutoUpdate\bin\Debug\MAutoUpdate.exe.config
+E:\GitHub\20190512\MAutoUpdate\MAutoUpdate\bin\Debug\MAutoUpdate.exe
+E:\GitHub\20190512\MAutoUpdate\MAutoUpdate\bin\Debug\MAutoUpdate.pdb
+E:\GitHub\20190512\MAutoUpdate\MAutoUpdate\obj\Debug\MAutoUpdate.MainForm.resources
+E:\GitHub\20190512\MAutoUpdate\MAutoUpdate\obj\Debug\MAutoUpdate.Properties.Resources.resources
+E:\GitHub\20190512\MAutoUpdate\MAutoUpdate\obj\Debug\MAutoUpdate.UpdateForm.resources
+E:\GitHub\20190512\MAutoUpdate\MAutoUpdate\obj\Debug\MAutoUpdate.csproj.GenerateResource.cache
+E:\GitHub\20190512\MAutoUpdate\MAutoUpdate\obj\Debug\MAutoUpdate.csproj.CoreCompileInputs.cache
+E:\GitHub\20190512\MAutoUpdate\MAutoUpdate\obj\Debug\MAutoUpdate.exe
+E:\GitHub\20190512\MAutoUpdate\MAutoUpdate\obj\Debug\MAutoUpdate.pdb
+E:\GitHub\20190512\MAutoUpdate\MAutoUpdate\obj\Debug\MAutoUpdate.csprojAssemblyReference.cache

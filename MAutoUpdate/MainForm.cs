@@ -23,19 +23,22 @@ namespace MAutoUpdate
         {
             InitializeComponent();
             updateWork = _updateWork;
-            var res = _updateWork.UpdateVerList[_updateWork.UpdateVerList.Count - 1].VersionDesc;
+            //var res = _updateWork.UpdateVerList[_updateWork.UpdateVerList.Count - 1].ReleaseUrl;
+            //var res = _updateWork.UpdateVerList[_updateWork.UpdateVerList.Count - 1].VersionDesc;
 
-            var temp = WebRequest.Create(res);
-            var stream = temp.GetResponse().GetResponseStream();
-            using (StreamReader reader = new StreamReader(stream, System.Text.Encoding.Default))
-            {
-                string text = reader.ReadToEnd();
-                this.lblContent.Text = text;
-            }
-            //foreach (var item in _updateWork.UpdateVerList[_updateWork.UpdateVerList.Count - 1].VersionDesc.Split('$'))
+            //var temp = WebRequest.Create(res);
+
+            //var stream = temp.GetResponse().GetResponseStream();
+
+            //using (StreamReader reader = new StreamReader(stream, Encoding.Default))
             //{
-            //    this.lblContent.Text = this.lblContent.Text + item + Environment.NewLine;
+            //    string text = reader.ReadToEnd();
+            //    lblContent.Text = text;
             //}
+            foreach (var item in _updateWork.UpdateVerList[_updateWork.UpdateVerList.Count - 1].VersionDesc.Split('$'))
+            {
+                lblContent.Text = lblContent.Text + item + Environment.NewLine;
+            }
         }
         #region 让窗体变成可移动
         [DllImport("user32.dll")]

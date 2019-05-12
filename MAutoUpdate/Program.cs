@@ -37,6 +37,7 @@ namespace MAutoUpdate
                     if (string.IsNullOrEmpty(programName) == false)
                     {
                         UpdateWork updateWork = new UpdateWork(programName, localAddress, isClickUpdate);
+
                         if (updateWork.UpdateVerList.Count > 0)
                         {
                             /* 当前用户是管理员的时候，直接启动应用程序 
@@ -49,7 +50,7 @@ namespace MAutoUpdate
                             System.Security.Principal.WindowsPrincipal principal = new System.Security.Principal.WindowsPrincipal(identity);
                             //判断当前登录用户是否为管理员 
                             if (principal.IsInRole(System.Security.Principal.WindowsBuiltInRole.Administrator))
-                            {
+                            {                              
                                 if (silentUpdate == "1")
                                 {
                                     updateWork.Do();
@@ -98,6 +99,7 @@ namespace MAutoUpdate
                 }
                 catch (Exception ex)
                 {
+                    LogTool.AddLog(ex.Message);
                     MessageBox.Show(ex.Message);
                 }
             }

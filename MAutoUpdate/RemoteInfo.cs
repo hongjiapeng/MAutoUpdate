@@ -6,13 +6,13 @@ namespace MAutoUpdate
 {
     public class RemoteInfo
     {
-        public String ApplicationStart { get; set; }
-        public String AppName { get; set; }
-        public String MinVersion { get; set; }
-        public String ReleaseDate { get; set; }
-        public String ReleaseUrl { get; set; }
-        public String ReleaseVersion { get; set; }
-        public String UpdateMode { get; set; }
-        public String VersionDesc { get; set; }
+        public string ApplicationStart { get; set; }
+        public string AppName { get; set; }
+        public string MinVersion { get; set; }
+        public string ReleaseDate { get; set; }
+        public string ReleaseUrl { get; set; }
+        public string ReleaseVersion { get; set; }
+        public string UpdateMode { get; set; }
+        public string VersionDesc { get; set; }
     }
 }

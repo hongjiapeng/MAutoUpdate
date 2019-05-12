@@ -21,7 +21,7 @@ namespace MAutoUpdate.Test
                 ProcessStartInfo processStartInfo = new ProcessStartInfo()
                 {
                     FileName = "MAutoUpdate.exe",
-                    Arguments = " MAutoUpdate.Test 1"
+                    Arguments = " MAutoUpdate.Test 0"
                 };
                 Process proc = Process.Start(processStartInfo);
                 if (proc != null)
