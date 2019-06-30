@@ -36,6 +36,10 @@ namespace MAutoUpdate
                     }
                     if (string.IsNullOrEmpty(programName) == false)
                     {
+                        LogTool.AddLog("--------------------11111111111111");
+
+                        LogTool.AddLog($"{programName},{localAddress},{isClickUpdate}");
+
                         UpdateWork updateWork = new UpdateWork(programName, localAddress, isClickUpdate);
 
                         if (updateWork.UpdateVerList.Count > 0)

@@ -13,7 +13,7 @@ namespace MAutoUpdate
         {
             var log = $"[{DateTime.Now.ToString()}]{value}";
             Debug.WriteLine(log);
-            if (Directory.Exists(Path.Combine(temp, @"log\")) == false)
+            if (!Directory.Exists(Path.Combine(temp, @"log\")))
             {
                 DirectoryInfo directoryInfo = new DirectoryInfo(Path.Combine(temp, @"log\"));
                 directoryInfo.Create();

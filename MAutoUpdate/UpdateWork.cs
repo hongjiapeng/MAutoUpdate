@@ -33,8 +33,10 @@ namespace MAutoUpdate
         /// </summary>
         public UpdateWork(string _programName, string localAddress, string isClickUpdate)
         {
-            localInfo = new LocalInfo(localAddress);
+            localInfo = new LocalInfo(localAddress); 
+
             Process cur = Process.GetCurrentProcess();
+
             mainName = Path.GetFileName(cur.MainModule.FileName);
             programName = _programName;
             //创建备份目录信息
@@ -140,10 +142,7 @@ namespace MAutoUpdate
                 return this;
             }
         }
-
-
-
-
+    
         /// <summary>
         /// 备份当前的程序目录信息
         /// </summary>
@@ -151,7 +150,6 @@ namespace MAutoUpdate
         {
             try
             {
-
                 LogTool.AddLog("更新程序：准备执行备份操作");
 
                 DirectoryInfo di = new DirectoryInfo(AppDomain.CurrentDomain.BaseDirectory);
@@ -162,9 +160,14 @@ namespace MAutoUpdate
                         File.Copy(item.FullName, bakPath + item.Name, true);
                     }
                 }
+
+                int i = 0;
                 //文件夹复制
                 foreach (var item in di.GetDirectories())
                 {
+                    i++;
+                    LogTool.AddLog($"准备开始文件夹复制{i},{bakPath},{item.FullName}");
+
                     if (item.Name != "bak" && item.Name != "temp")
                     {
                         CopyDirectory(item.FullName, bakPath);
@@ -247,6 +250,8 @@ namespace MAutoUpdate
         private UpdateWork CopyDirectory(string srcdir, string desdir)
         {
             string folderName = srcdir.Substring(srcdir.LastIndexOf("\\") + 1);
+
+            LogTool.AddLog(folderName+"SNDKSDDDDDDDDDD");
 
             string desfolderdir = desdir + "\\" + folderName;
 

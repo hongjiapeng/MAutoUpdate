@@ -74,5 +74,11 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\1.gif" />
+    <Content Include="bin\Debug\MAutoUpdate.exe" />
+    <Content Include="bin\Debug\MAutoUpdate.Test.exe" />
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

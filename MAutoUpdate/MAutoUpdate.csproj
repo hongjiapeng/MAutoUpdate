@@ -155,7 +155,6 @@
     </EmbeddedResource>
     <None Include="app.config" />
     <None Include="app.manifest" />
-    <None Include="bin\Debug\MAutoUpdate.exe.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -170,7 +169,6 @@
   <ItemGroup>
     <Content Include="bin\Debug\Local.xml" />
     <Content Include="bin\Debug\MAutoUpdate.exe" />
-    <Content Include="bin\Debug\MAutoUpdate.pdb" />
     <Content Include="Zip DLL\msbuild.flymake.xml" />
     <None Include="config.update" />
     <Content Include="Local.xml">

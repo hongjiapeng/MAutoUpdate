@@ -1,7 +1,6 @@
 E:\GitHub\20190512\MAutoUpdate\MAutoUpdate.Test\bin\Debug\MAutoUpdate.Test.exe.config
 E:\GitHub\20190512\MAutoUpdate\MAutoUpdate.Test\bin\Debug\MAutoUpdate.Test.exe
 E:\GitHub\20190512\MAutoUpdate\MAutoUpdate.Test\bin\Debug\MAutoUpdate.Test.pdb
-E:\GitHub\20190512\MAutoUpdate\MAutoUpdate.Test\obj\Debug\MAutoUpdate.Test.csprojAssemblyReference.cache
 E:\GitHub\20190512\MAutoUpdate\MAutoUpdate.Test\obj\Debug\MAutoUpdate.Test.Form1.resources
 E:\GitHub\20190512\MAutoUpdate\MAutoUpdate.Test\obj\Debug\MAutoUpdate.Test.Properties.Resources.resources
 E:\GitHub\20190512\MAutoUpdate\MAutoUpdate.Test\obj\Debug\MAutoUpdate.Test.csproj.GenerateResource.cache

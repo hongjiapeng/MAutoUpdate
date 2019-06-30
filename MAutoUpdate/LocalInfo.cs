@@ -16,7 +16,6 @@ namespace MAutoUpdate
 
         private string url = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Local.xml");
 
-
         public LocalInfo(string localAddress)
         {
             url = Path.Combine(localAddress, "Local.xml");
